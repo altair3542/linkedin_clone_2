@@ -1,0 +1,18 @@
+******************
+Bienvenido, <%= @user.name %>!
+******************
+
+Gracias por probar <%= ENV.fetch("APP_NAME")%>. Estamos emocionados de que este a bordo.
+
+Para futura referencia, aqui esta tu informacion de incio de sesion
+
+Correo: <%= @user.email %>
+
+Contraseña: *******
+
+Gracias,
+El equipo de <%= ENV.fetch("APP_NAME")%>
+
+© <%= Time.current.year %> <%= ENV.fetch("APP_NAME")%>. Todos los derechos reservados.
+
+<%= ENV.fetch("APP_NAME")%>
